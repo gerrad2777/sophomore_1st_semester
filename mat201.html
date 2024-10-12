@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        canvas {
+            background-color: black;
+            vertical-align: middle;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <h2>Mathematical Method</h2>
+    <hr>
+    <ol>
+        <li>
+            <ol type="a">
+                <li>If y = 2x<sup>5</sup> + 4x<sup>4</sup> - x<sup>3</sup> + 3x<sup>2</sup> - 5x + 7. Find an expression for <canvas class="dyDX" width="24" height="24"></canvas> and the value of <canvas class="dyDX"></canvas> at x = 2.</li>
+                <li>If k = ⨜(8x<sup>3</sup> - 3x<sup>2</sup> + 4x - 5)dx. Determine the value of k when x = 3, given that x = 2, k = 26.</li>
+                <li>
+                    <ul>
+                        <li>Show that the differential equation y<sup>11</sup> - 4y<sup>1</sup> + 4y = 0 is satisfied when y = xe<sup>2x</sup>.</li>
+                        <li>Find 
+                            <ul>
+                                <li>f<sub>xx</sub></li>
+                                <li>f<sub>yy</sub></li>
+                                <li>f<sub>xy</sub></li>
+                            </ul>
+                            if f(x, y) = tan<sup>-1</sup>(y/x)
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li></li>
+        <li>
+            <ol type="a">
+                <li>Define the following:
+                    <ul>
+                        <li>Real value function</li>
+                        <li>Rational function</li>
+                        <li>Even and odd function</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <script>
+        const dyDX = document.querySelectorAll(".dyDX");
+        const dyDXCtx = []
+        dyDX.forEach((e) => {
+            e.width = e.height = 30
+            e.clientWidth = e.clientHeight = "30px"
+            dyDXCtx.push(e.getContext("2d"))
+        })
+        dyDXCtx.forEach((e) => {
+            e.fillStyle = "white"
+            e.font = "12px Arial Bold"
+            e.textBaseline = "top"
+            e.textAlign = "center"
+            e.fillText("dy", 15, 3)
+            e.fillRect(0, 16, 30, 1)
+            e.fillText("dx", 15, 18)
+        })
+    </script>
+</body>
+</html>

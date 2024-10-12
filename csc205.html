@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        canvas {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Discrete Mathematics</h2>
+    <hr>
+    <ol>
+        <li>
+            <ol type="a">
+                <li>Define the following terms:
+                    <ul>
+                        <li>Relation</li>
+                        <li>Function</li>
+                        <li>Discrete mathematics</li>
+                        <li>Truth table</li>
+                        <li>Boolem algebra</li>
+                    </ul>
+                </li>
+                <li>
+                    Illustrate the relation y:x -> x<sup>2</sup> - 2x - 3 for x ranges from -2 ⪯ x ⪯ 4 by means of: 
+                    <ol>
+                        <li>A table</li>
+                        <li>A set of ordered pairs</li>
+                        <li>An arrow diagram</li>
+                        <li>Cartesian graph</li>
+                    </ol>
+                </li>
+                <li>A school registers 300 candidates for an examination. 150 of the candidates offer Mathematics and 90 offer Physics. 100 candidates offer neither Mathematics nor Physics. 
+                    <ul>
+                        <li>How many candidates offering both Mathematics and Physics</li>
+                        <li>Determine the number of candidates offering atleast one of Mathematics or Physics</li>
+                    </ul>
+                </li>
+
+            </ol>
+        </li>
+        <li>
+            <ol type="a">
+                <li>What is a graph? Itemize five(5) types of graphs you know and distinguish between directed and undirected graph.</li>
+                <li>Find the spanning trees of the below given graph<br>
+                    <canvas width="220" height="220" id="b2"></canvas>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <ol type="a">
+                <li>The function F:R -> R is defined by
+                    <!-- TODO: Add a canvas -->
+                </li>
+                <li>Given that g:x -> ax<sup>2</sup> + bx is a mapping on the set of real numbers and that g(2) = 6 when g(-1) = -6. 
+                <ul>
+                    <li>Find g(3) and g(4)</li>
+                    <li>determine g(3)<sup>2</sup> * g(4)</li>
+                </ul>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <ol type="a">
+                <li>Vividly explain the following statement with the aid of truth table:
+                <ol type="I">
+                    <li>Conditional statement</li>
+                    <li>Bi-conditional statement</li>
+                    <li>Converse statement</li>
+                    <li>Inverse statement</li>
+                    <li>Contrapositive statement</li>
+                </ol>
+                </li>
+                <li>
+                    If f and g are mapping that are defined over set of real numbers by f(x) = x + 2 and g(x) = 2x<sup>2</sup> + 1 respectively, find the value of x for which fg gf.
+                </li>
+            </ol>
+        </li>
+        <li>
+            <ol type="a">
+                <li>If f, g, and h are mappings defined on the set of real numbers by <br> 
+                f(x) = 3x + 1, g(x) = 2x - 1 and h(x) = x<sup>2</sup> find: 
+                    <ol type="i">
+                        <li>fog</li>
+                        <li>fogoh</li>
+                        <li>hogof</li>
+                    </ol>
+                </li>
+                <li>Prove that [P -> (q -> r)] &leftrightarrow; [(P ^ q) -> r]. </li>
+            </ol>
+        </li>
+        <li>
+            <ol type="a">
+                <li>In a class of 58 students, 35 offer Biology, 28 offer Economics and 15 offer physics. Each student offers atleast one of the three subjects. If 12 students offer both Biology and Economics , 7 students offer both Biology 
+                    and Physics and 5 students offer both Economics and Physics. How many student offer all the three subjects?
+                </li>
+                <li>If P and Q are subjects of the universal set such that x is an integer and 1 &lt; x &lt; 15, P = {x: x is odd number} and Q = {x: x is prime number}, find n(P<sup>1</sup> n Q)</li>
+            </ol>
+        </li>
+    </ol>
+    <script>
+        const b2Ctx = document.getElementById("b2").getContext("2d");
+        let r = 10
+        b2Ctx.moveTo(0 + r, 0 + r)
+        b2Ctx.lineTo(200 + r, 200 + r);
+        b2Ctx.lineTo(0 + r, 200 + r);
+        b2Ctx.lineTo(200 + r, 0 + r);
+        b2Ctx.lineTo(0 + r, 0 + r)
+        b2Ctx.lineTo(0 + r, 200 + r)
+        b2Ctx.lineTo(200 + r, 200 + r);
+        b2Ctx.lineTo(200 + r, 0 + r);
+        b2Ctx.stroke()
+        b2Ctx.beginPath()
+        b2Ctx.arc(r, r, r, 0, Math.PI * 2)
+        b2Ctx.fill()
+        b2Ctx.beginPath()
+        b2Ctx.arc(r, 220 - r, r, 0, Math.PI * 2)
+        b2Ctx.fill()
+        b2Ctx.beginPath()
+        b2Ctx.arc(220 - r, r, r, 0, Math.PI * 2)
+        b2Ctx.fill()
+        b2Ctx.beginPath()
+        b2Ctx.arc(220 - r, 220 - r, r, 0, Math.PI * 2)
+        b2Ctx.fill()
+    </script>
+</body>
+</html>
