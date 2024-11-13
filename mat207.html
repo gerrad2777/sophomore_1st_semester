@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Real Analysis</h2>
+    <hr>
+    <ul>
+        <li>What is a function? </li>
+        <li>What is a continuous function? </li>
+        <li>Resolve using L'Hopital rule that: <br>
+            <canvas id="canvas1"></canvas>
+        </li>
+        <li>When will a sequence said to be monotone</li>
+        <li>Explain monotone increasing and monotone decreasing function.</li>
+        <li>What is a series? and what is meant to say that the series is convergent. </li>
+        <li>Show that the sequence <br> X<sub>n</sub> = </li>
+        <li>What is Rolle's Theorem</li>
+        <li>Find the value or values of c for which the function f(x) = e<sup>-x</sup>sinx in [0, 4&Pi;] in Rolle's theorem. </li>
+        <li>When will a series be absolutely convergent? </li>
+        <li>Explain finite and constant sequence</li>
+        <li>Explain Taylor's theorem</li>
+        <li>By resolving into partial fraction show that the series  converges to 1/2 </li>
+    </ul>
+    <script>
+        function pasteRuby(top, bottom, ctx){
+            this.top = top;
+            this.bottom = bottom;
+            this.ctx = ctx;
+            this.ctx.canvas.width = this.width = 40;
+            this.ctx.canvas.height = this.height = 40;
+            this.ctx.fontSmoothingEnabled = false
+            this.ctx.fillRect(0, 19, 20, 2);
+            this.ctx.font = "18px Arial";
+            this.ctx.textBaseline= 'top';
+            this.ctx.fillText(this.top, 0, 0);
+            this.ctx.fillText(this.bottom, 0, 22);
+            document.body.appendChild(this.ctx.canvas);
+        }
+        new pasteRuby(20, 20, document.getElementById("a1").getContext('2d'))
+    </script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+</body>
+</html>
